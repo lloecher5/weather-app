@@ -1,0 +1,7 @@
+footer {
+  background-color: lightblue;
+  text-align: center;
+  flex: 1 0 auto;
+  padding: 10px 10px;
+  margin-top: 100%;
+}

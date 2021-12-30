@@ -1,4 +1,5 @@
 import Header from "../../sectioning/header/header";
+import Footer from "../../sectioning/footer/footer";
 import "./style.css";
 import { Card, Button } from "react-bootstrap";
 
@@ -73,6 +74,7 @@ const Favorites = () => {
             );
           })}
       </div>
+      <Footer />
     </div>
   );
 };

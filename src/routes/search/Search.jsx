@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 import CityWeather from "../../components/CityWeather";
 import CityForecast from "../../components/CityForecast";
 import Header from "../../sectioning/header/header";
+import Footer from "../../sectioning/footer/footer";
 import "./style.css";
 
 const Input = ({ getCurrentWeather, results, getWeeklyForecast, forecast }) => {
@@ -55,45 +56,48 @@ const Input = ({ getCurrentWeather, results, getWeeklyForecast, forecast }) => {
   return (
     <div>
       <Header />
-      <p>Search for a city to find it's current weather.</p>
-      <form className="form" onSubmit={handleSubmit}>
-        <input onChange={handleChange} type="text" value={cityInput}></input>
-        <button className="submit" variant="primary">
-          Submit
-        </button>
-      </form>
-      {results && (
-        <div className="results">
-          <CityWeather
-            description={description}
-            city={name}
-            temp={temperature}
-            lat={lat}
-            lon={lon}
-            icon={icon}
-          />
-          <Button
-            variant="primary"
-            className="forecast-btn"
-            onClick={handleClick}
-          >
-            Click for Weekly Forecast
-          </Button>
+      <div className="content">
+        <p>Search for a city to find it's current weather.</p>
+        <form className="form" onSubmit={handleSubmit}>
+          <input onChange={handleChange} type="text" value={cityInput}></input>
+          <button className="submit" variant="primary">
+            Submit
+          </button>
+        </form>
+        {results && (
+          <div className="results">
+            <CityWeather
+              description={description}
+              city={name}
+              temp={temperature}
+              lat={lat}
+              lon={lon}
+              icon={icon}
+            />
+            <Button
+              variant="primary"
+              className="forecast-btn"
+              onClick={handleClick}
+            >
+              Click for Weekly Forecast
+            </Button>
+          </div>
+        )}
+        <div className="forecast">
+          {days.length > 0 &&
+            days.map((day, index) => {
+              return (
+                <CityForecast
+                  clasName="forecast-card"
+                  city={name}
+                  key={index}
+                  day={day}
+                />
+              );
+            })}
         </div>
-      )}
-      <div className="forecast">
-        {days.length > 0 &&
-          days.map((day, index) => {
-            return (
-              <CityForecast
-                clasName="forecast-card"
-                city={name}
-                key={index}
-                day={day}
-              />
-            );
-          })}
       </div>
+      <Footer />
     </div>
   );
 };

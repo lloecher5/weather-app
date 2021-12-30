@@ -1,4 +1,5 @@
 import Header from "./sectioning/header/header";
+import Footer from "./sectioning/footer/footer";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         discover the current weather of any city.You can also see the weekly
         forecast for each city as well!
       </p>
+      <Footer />
     </div>
   );
 }
