@@ -1,0 +1,27 @@
+.form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.results {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.forecast {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forecast-btn {
+  margin-top: 20px;
+}
+
+.submit {
+  margin-left: 10px;
+}

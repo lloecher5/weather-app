@@ -1,0 +1,21 @@
+.day {
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.day-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.forecast-card {
+  background-color: lightblue;
+  border: 1px solid black;
+}

@@ -1,0 +1,7 @@
+.forecast {
+  display: flex;
+}
+
+.forecast-btn {
+  margin-top: 10px;
+}

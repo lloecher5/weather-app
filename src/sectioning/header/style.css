@@ -1,0 +1,19 @@
+header {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.navs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navs ul li {
+  display: inline-block;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+h1 {
+  margin-left: 130px;
+}

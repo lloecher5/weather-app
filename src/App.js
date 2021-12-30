@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./sectioning/header/header";
+import "./App.css";
 
 function App() {
+  // const getCurrentLocation = () => {
+  //   navigator.geolocation.getCurrentPosition(function (position) {
+  //     const lat = position.coords.latitude;
+  //     const lon = position.coords.longitude;
+  //     console.log(lat, lon);
+  //   });
+  // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <p>
+        Welcome to the weather app. Go to the search page where you are able to
+        discover the current weather of any city.You can also see the weekly
+        forecast for each city as well!
+      </p>
     </div>
   );
 }

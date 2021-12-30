@@ -1,0 +1,19 @@
+Card {
+  margin-left: 100px;
+}
+
+.city-name {
+  text-align: center;
+}
+
+.current-weather {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.forecast-btn {
+  margin-top: 20px;
+}

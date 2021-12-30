@@ -1,0 +1,24 @@
+.favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.city-name {
+  text-align: center;
+}
+
+.forecast-btn {
+  margin-top: 20px;
+}
+
+.favorite-city {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.remove-btn {
+  margin-left: 75px;
+}
