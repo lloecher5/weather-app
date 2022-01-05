@@ -1,3 +1,28 @@
 .App {
   text-align: center;
 }
+
+main {
+  background-image: url("../public/weather-image.jpg");
+  background-size: cover;
+
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+}
+
+Footer {
+  height: 5vh;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.welcome {
+  height: 350px;
+  background-color: lightblue;
+  margin-top: 100px;
+  border: 3px solid black;
+}

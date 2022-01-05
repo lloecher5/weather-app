@@ -17,3 +17,8 @@ Card {
 .forecast-btn {
   margin-top: 20px;
 }
+
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+}

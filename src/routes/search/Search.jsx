@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 import CityWeather from "../../components/CityWeather";
 import CityForecast from "../../components/CityForecast";
 import Header from "../../sectioning/header/header";
-import Footer from "../../sectioning/footer/footer";
+
 import "./style.css";
 
 const Input = ({ getCurrentWeather, results, getWeeklyForecast, forecast }) => {
@@ -56,6 +56,7 @@ const Input = ({ getCurrentWeather, results, getWeeklyForecast, forecast }) => {
   return (
     <div>
       <Header />
+
       <div className="content">
         <p>Search for a city to find it's current weather.</p>
         <form className="form" onSubmit={handleSubmit}>
@@ -97,7 +98,6 @@ const Input = ({ getCurrentWeather, results, getWeeklyForecast, forecast }) => {
             })}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

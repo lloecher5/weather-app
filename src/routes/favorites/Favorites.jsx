@@ -1,5 +1,6 @@
 import Header from "../../sectioning/header/header";
 import Footer from "../../sectioning/footer/footer";
+
 import "./style.css";
 import { Card, Button } from "react-bootstrap";
 
@@ -33,6 +34,10 @@ const Favorites = () => {
   return (
     <div>
       <Header />
+      <h3>
+        <u>Favorite Cities</u>
+      </h3>
+
       <div className="favorites">
         {favorites &&
           favorites.map((favorite, index) => {
@@ -74,7 +79,6 @@ const Favorites = () => {
             );
           })}
       </div>
-      <Footer />
     </div>
   );
 };

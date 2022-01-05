@@ -1,10 +1,23 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import "./CityWeather.css";
 
 const CityWeather = (props) => {
+  const [message, setMessage] = useState("");
+
   const saveToFavorites = (e) => {
-    console.log(props);
+    const renderAlert = () => {
+      setMessage(`${props.city} has been added to your favorites!`);
+    };
+
+    renderAlert();
+
+    const removeAlert = () => {
+      setMessage("");
+    };
+
+    setTimeout(removeAlert, 2000);
+
     let favoriteListJSON = localStorage.getItem("favorites");
 
     //converts the watchlist object from JSON to an array
@@ -27,6 +40,7 @@ const CityWeather = (props) => {
 
   return (
     <div>
+      {message && <p id="message">{message}</p>}
       <Card className="current-weather" style={{ width: "18rem" }}>
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
