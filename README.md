@@ -1,2 +1,2 @@
-Weather App
+##Weather App
 Application built using React and Redux.
